@@ -11,13 +11,13 @@ app.use(express.json());
 
 //Ruta raiz
 app.get('/', async (req, res) => {
-  res.send("Prueba que funciona");
+  res.send("Bienvenido a la API del proytecto UniPark");
 });
 
 
 //configuración de rutas
 const userRoutes = require('./routes/routers.js');
-app.use('/apiv1', userRoutes);
+app.use('/api-rest/v1', userRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
