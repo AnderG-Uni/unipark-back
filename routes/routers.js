@@ -33,6 +33,7 @@ router.post('/reporte/ingresos', WebReportController.HistoryIncomeVehicle);     
 
 router.post('/Administrar/usuarios', WebAdminController.ListUsers);             // se muestra los usuarios existente de la plataforma
 router.post('/Administrar/vehiculos', WebAdminController.ListVehicles);         // se muestra los usuarios existente de la plataforma
+router.post('/Administrar/proximament', WebAdminController.Prox);               // Temporal
 
 //:::::::::::::::::::::::::::  CONTROLLER APP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
 router.post('/aplicacion/sincronizar', AppSyncController.Sync);                // se sincroniza la información de la app
