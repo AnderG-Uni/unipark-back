@@ -7,10 +7,6 @@ const NewVehicle = async (req, res) => {
   const datos = req.body;
   console.log("DATOS enviados: ", datos);
 
-  const PasswordEncrypt = CryptoJS.SHA256(datos.password, process.env.CODE_SECRET_DATA).toString();
-  //console.log("PASS Encryp: ", PasswordEncrypt);
-  const Role = "User";
-  
   try{ 
 
     //valido que los datos envidos no existan en la BD
